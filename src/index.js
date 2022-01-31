@@ -3,7 +3,8 @@ const parseArgs = require('minimist')
 const startServer = require('./server.js')
 
 const {
-  port = 3000,
+  port = process.env.PORT
+,
   lock,
   'per-message-deflate': perMessageDeflate,
   help
